@@ -25,7 +25,7 @@ Rets:
 """
 def plot(data):
 
-	plt.title("L2 Cache data demand base rate")
+	plt.title("L2 Cache data demand miss rate")
 	plt.grid(True)
 	plt.xscale('log', basex=2)	# Log base 2 scale for size
 	plt.gca().xaxis.set_major_formatter(ScalarFormatter())
