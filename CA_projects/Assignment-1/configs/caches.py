@@ -41,6 +41,15 @@ class L2Cache(Cache):
     response_latency = 10
     mshrs = 20
     tgts_per_mshr = 12
+
+    def __init__(self, options=None):
+        super(L2Cache, self).__init__()
+        if not options or not options.l2_size:
+            return
+        self.size = options.l2_size
+        if not options.l2_assoc:
+            return
+        self.assoc = options.l2_assoc
     
     def connectCPUSideBus(self, bus):
         self.cpu_side = bus.master

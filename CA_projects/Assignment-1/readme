@@ -1,2 +1,25 @@
 Sources:
 http://learning.gem5.org/book/
+
+Benchmark ran:
+susan input_small.pgm output_small.smoothing.pgm -s
+
+How to generate graph:
+	Run plotter using the following command:
+		python3 path/to/plotter path/to/run_dir
+	Deps:
+		matplotlib
+		os
+		sys
+
+Raw data can be found in run_dir.
+The structure is:
+	run_dir/logs	-> logs generated while running gem5
+	run_dir/stats	-> stats folder for runs
+	
+	Naming convention:
+		size_assoc
+
+How to run:
+	run executer.sh form the following path:
+	path/to/gem5/installation/<some_dir>/<some_dir>/executer.sh

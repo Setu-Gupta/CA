@@ -53,7 +53,7 @@ system.cpu.icache.connectBus(system.l2bus)
 system.cpu.dcache.connectBus(system.l2bus)
 
 # Instantiate L2 and connect to l2bus and membus
-system.l2cache = L2Cache()
+system.l2cache = L2Cache(options)
 system.l2cache.connectCPUSideBus(system.l2bus)
 system.l2cache.connectMemSideBus(system.membus)
 
