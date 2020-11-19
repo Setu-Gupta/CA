@@ -1,0 +1,6 @@
+ALADDIN_HOME='/workspace/gem5-aladdin/src/aladdin'
+TRACER_HOME='/workspace/LLVM-Tracer'
+LLVM_HOME='/usr/local'
+BOOST_ROOT='/usr/include'
+SHELL='/bin/bash'
+FORCE_CXX11_ABI='1'
